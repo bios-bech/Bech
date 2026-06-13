@@ -18,6 +18,7 @@
       <a href="#about">Om salonen</a>
       <a href="#services">Behandlinger</a>
       <a href="#work">Galleri</a>
+      <a href="#booking">Book tid</a>
       <a href="#contact">Kontakt</a>
     </div>
   </nav>
@@ -28,7 +29,7 @@
         <p class="eyebrow">Frisørsalon med personlig rådgivning</p>
         <h1>Sannes</h1>
         <p>Klip · Farve · Striber · Styling · Bryn · Kurbehandling</p>
-        <a href="#contact" class="btn">Book tid</a>
+        <a href="#booking" class="btn">Book tid</a>
       </div>
     </section>
 
@@ -79,6 +80,64 @@
         <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=700&q=80" alt="Frisørarbejde med børste">
         <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=700&q=80" alt="Hårfarve og styling">
         <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=700&q=80" alt="Frisørsalon stol og spejl">
+      </div>
+    </section>
+
+    <section id="booking" class="container fade-in">
+      <h2>Book tid</h2>
+      <div class="booking-panel">
+        <div>
+          <p class="booking-intro">
+            Vælg en ledig dato og et tidspunkt. Når du sender ønsket, åbner din mail,
+            så aftalen kan bekræftes direkte med Sannes.
+          </p>
+          <div class="calendar-widget" aria-label="Bookingkalender">
+            <div class="calendar-header">
+              <button class="calendar-nav" type="button" data-calendar-prev aria-label="Forrige måned">‹</button>
+              <h3 data-calendar-title>Ledige tider</h3>
+              <button class="calendar-nav" type="button" data-calendar-next aria-label="Næste måned">›</button>
+            </div>
+            <div class="calendar-weekdays" aria-hidden="true">
+              <span>Man</span>
+              <span>Tir</span>
+              <span>Ons</span>
+              <span>Tor</span>
+              <span>Fre</span>
+              <span>Lør</span>
+              <span>Søn</span>
+            </div>
+            <div class="calendar-grid" data-calendar-grid></div>
+          </div>
+        </div>
+
+        <div class="booking-card">
+          <h3>Ledige tider</h3>
+          <p data-selected-date>Vælg en dato i kalenderen.</p>
+          <div class="time-slots" data-time-slots></div>
+
+          <form class="booking-form" data-booking-form>
+            <label for="booking-name">Navn</label>
+            <input type="text" id="booking-name" name="name" placeholder="Dit navn" autocomplete="name" required>
+
+            <label for="booking-phone">Telefon</label>
+            <input type="tel" id="booking-phone" name="phone" placeholder="Dit telefonnummer" autocomplete="tel" required>
+
+            <label for="booking-treatment">Behandling</label>
+            <select id="booking-treatment" name="treatment" required>
+              <option value="">Vælg behandling</option>
+              <option value="Dameklip">Dameklip</option>
+              <option value="Herreklip">Herreklip</option>
+              <option value="Farve">Farve</option>
+              <option value="Striber">Striber</option>
+              <option value="Styling">Styling</option>
+              <option value="Hårkur">Hårkur</option>
+            </select>
+
+            <input type="hidden" name="date" data-booking-date>
+            <input type="hidden" name="time" data-booking-time>
+            <button type="submit" class="btn">Send bookingønske</button>
+          </form>
+        </div>
       </div>
     </section>
 
