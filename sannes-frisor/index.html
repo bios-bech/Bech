@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frisørsalon med klip, farve, styling og personlig rådgivning. Book tid på telefon 53 83 01 23.">
+  <meta property="og:title" content="Sannes | Frisørsalon">
+  <meta property="og:description" content="Moderne frisørsalon med klip, farve, styling og behandlinger i rolige omgivelser.">
+  <meta property="og:type" content="website">
+  <title>Sannes | Frisørsalon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="logo" href="#top">Sannes</a>
+    <button class="menu-toggle" type="button" aria-label="Åbn menu" aria-expanded="false">☰</button>
+    <div class="menu">
+      <a href="#about">Om salonen</a>
+      <a href="#services">Behandlinger</a>
+      <a href="#work">Galleri</a>
+      <a href="#contact">Kontakt</a>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="overlay">
+        <p class="eyebrow">Frisørsalon med personlig rådgivning</p>
+        <h1>Sannes</h1>
+        <p>Klip · Farve · Striber · Styling · Bryn · Kurbehandling</p>
+        <a href="#contact" class="btn">Book tid</a>
+      </div>
+    </section>
+
+    <section id="about" class="container fade-in">
+      <h2>Om salonen</h2>
+      <p>
+        Sannes er en hyggelig frisørsalon med fokus på nærvær, flot håndværk
+        og hår, der passer til dig i hverdagen. Her får du ærlig rådgivning,
+        rolige omgivelser og behandlinger med blik for både stil, pleje og finish.
+      </p>
+    </section>
+
+    <section id="services" class="container fade-in">
+      <h2>Behandlinger</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Dameklip</h3>
+          <p>Klip med personlig rådgivning, vask og styling, så håret falder naturligt.</p>
+        </div>
+        <div class="service-card">
+          <h3>Herreklip</h3>
+          <p>Klassisk eller moderne klip med rene linjer og en frisk afslutning.</p>
+        </div>
+        <div class="service-card">
+          <h3>Farve</h3>
+          <p>Hel farve, toning og opfriskning med fokus på glans og et naturligt udtryk.</p>
+        </div>
+        <div class="service-card">
+          <h3>Striber</h3>
+          <p>Lyse, bløde eller markerede striber tilpasset dit hår og din stil.</p>
+        </div>
+        <div class="service-card">
+          <h3>Styling</h3>
+          <p>Føntørring, opsætning og styling til hverdag, fest og særlige anledninger.</p>
+        </div>
+        <div class="service-card">
+          <h3>Hårkur</h3>
+          <p>Plejende kurbehandlinger, der giver fugt, styrke og mere liv i håret.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="container fade-in">
+      <h2>Stemning fra salonen</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=700&q=80" alt="Frisør klipper hår">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80" alt="Stylet hår i salon">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=700&q=80" alt="Frisørarbejde med børste">
+        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=700&q=80" alt="Hårfarve og styling">
+        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=700&q=80" alt="Frisørsalon stol og spejl">
+      </div>
+    </section>
+
+    <section id="contact" class="container fade-in">
+      <h2>Kontakt</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Ring eller skriv for at booke en tid, høre om behandlinger eller få rådgivning om dit hår.</p>
+          <p>Email: <a href="mailto:michael.bech@outlook.dk">michael.bech@outlook.dk</a></p>
+          <p>Telefon: <a href="tel:+4553830123">+45 53 83 01 23</a></p>
+          <p>Område: Smørum</p>
+        </div>
+
+        <form class="contact-form" action="mailto:michael.bech@outlook.dk" method="post" enctype="text/plain">
+          <label for="name">Navn</label>
+          <input type="text" id="name" name="name" placeholder="Dit navn" autocomplete="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="din@email.dk" autocomplete="email" required>
+
+          <label for="project">Behandling</label>
+          <select id="project" name="behandling" required>
+            <option value="">Vælg type</option>
+            <option value="Dameklip">Dameklip</option>
+            <option value="Herreklip">Herreklip</option>
+            <option value="Farve">Farve</option>
+            <option value="Striber">Striber</option>
+            <option value="Styling">Styling</option>
+            <option value="Hårkur">Hårkur</option>
+          </select>
+
+          <label for="message">Besked</label>
+          <textarea id="message" name="message" rows="5" placeholder="Skriv gerne ønsket dato, tidspunkt og behandling" required></textarea>
+
+          <button type="submit" class="btn">Send bookingønske</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Sannes | Frisørsalon</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
